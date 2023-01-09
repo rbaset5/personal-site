@@ -2,3 +2,83 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'Rashid Baset'
 theme = 'hugo-profile'
+Paginate = 3
+enableRobotsTXT = true
+
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+
+[params]
+title = "RBASET"
+description = "Text about my cool site"
+favicon = "/fav.png"
+useBootstrapCDN = false
+animate = true
+
+  [params.font]
+  fontSize = "1rem"
+  fontWeight = 400
+  lineHeight = 1.5
+  textAlign = "left"
+
+  [params.navbar]
+  align = "ms-auto"
+  brandName = "Rashid Baset"
+  disableSearch = false
+
+    [params.navbar.menus]
+    disableAbout = false
+    disableExperience = false
+    disableEducation = false
+    disableProjects = false
+    disableAchievements = false
+    disableContact = false
+
+  [params.hero]
+  enable = true
+  intro = "Hi, my name is"
+  title = "Rashid."
+  subtitle = "I'm a Data Scientist"
+  content = "My background is in customer service, education, healthcare, and e-commerce. I perform robust analytics and build machine learning pipelines and personalized data products to assist businesses in developing strategic solutions that provide greater customer satisfaction and business growth. I have provided technical solutions to stakeholders across industries. After several years in customer service, I directed my focus toward artificial intelligence and data science."
+  image = "/images/hero.jpeg"
+
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/rbaset5"
+
+
+  [params.about]
+  enable = true
+  title = "About Me"
+  image = "/images/me.svg"
+  content = """
+I specialize in the following:
+
+Deploying data science projects—including interactive applications, notebooks, dashboards, and machine learning models with REST APIs. 
+Utilizing data and industry specific knowledge to improve decision making and develop and maintain data products. 
+
+In my data science portfolio, I retrieved data from outside sources and organized it using Python and created impactful  visualizations to present key findings. I explored data and wrote multiple hypotheses for further analysis and performed A/B tests. I also built machine learning APIs that produced results of an analysis that applied and used big data. After creating analyses, I developed collaborative techniques to better share conclusions about approaches and analyses to potential stakeholders. 
+
+
+
+I am looking forward to leveraging my diverse experience and data science skills to help organizations succeed."""
+
+    [params.about.skills]
+    enable = true
+    title = "Here are a few technologies I've been working with recently:"
+    items = [ "Python", "R", "SQL", "Tableu" ]
+
+
+[params.footer.socialNetworks]
+github = "https://github.com/rbaset5"
+linkedin = "https://linkedin.com/in/rbaset"
+
+  [params.listPages]
+  disableFeaturedImage = false
